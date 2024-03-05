@@ -19,4 +19,8 @@ Centered list of buttson named, and freatured in the the following way.
         - master
 - instrucions/help/guide
     - see refs [here](../../sourceReferances/screenshots/helpPage/)
+- Watch Intro (optional)
+- credits
+- licensing
+- website
 - exit

@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://xj87i1wn4gyx"]
+
+[ext_resource type="Script" path="res://market.gd" id="1_5gcm1"]
+[ext_resource type="PackedScene" uid="uid://ba454pekvkah6" path="res://woodworker/Woodsman.tscn" id="2_sskod"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5gcm1")
+tradeGood = null
+wood_supply = null
+wood_price = null
+demand_history = null
+supply_history = null
+chairs_made = null
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="workerList" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="woodsman" parent="Control/workerList" instance=ExtResource("2_sskod")]
+layout_mode = 2

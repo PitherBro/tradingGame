@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://ba454pekvkah6"]
+
+[ext_resource type="Script" path="res://woodworker/Woodsman.gd" id="1_kfrhv"]
+[ext_resource type="Texture2D" uid="uid://cd806tt5bj1c6" path="res://woodworker/woodenAxe-Icon.jpg" id="2_hmb3c"]
+[ext_resource type="Texture2D" uid="uid://b4qos8yuy7jwe" path="res://woodworker/progressBar/colors/progressBar.png" id="3_od27u"]
+
+[node name="woodsman" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_kfrhv")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+offset_right = 210.0
+offset_bottom = 164.0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/VBoxContainer"]
+clip_contents = true
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(256, 256)
+layout_mode = 2
+size_flags_horizontal = 3
+focus_neighbor_left = NodePath("../statblock")
+texture = ExtResource("2_hmb3c")
+expand_mode = 2
+
+[node name="statblock" type="RichTextLabel" parent="VBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+fit_content = true
+
+[node name="Button" type="Button" parent="VBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "upgrade"
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+max_value = 200.0
+step = 16.0
+value = 16.0
+texture_under = ExtResource("3_od27u")
+texture_progress = ExtResource("3_od27u")
+tint_under = Color(0.952941, 1, 0.301961, 1)
+tint_progress = Color(0.501961, 0.352941, 0.0352941, 1)

@@ -17,8 +17,8 @@ enum workerSkills{
 ##########################################
 class Skill extends  Resource:
 	func _init( id =0 ,name = "woodcutter"):
-		self.maxValue = 42
-		self.minValue = 1
+		self.maxValue := 42
+		self.minValue := 1
 		self.level = self.randLevel()
 		self.name = "{0}-{1}-{2}".format([id, name, self.level])
 		self.baseCost = 2

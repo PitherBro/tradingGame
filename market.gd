@@ -12,7 +12,7 @@ class_name Market
 @export var wood_price = 1.0
 @export var demand_history = []
 @export var supply_history = []
-@export var workerListEntities:Array[Woodsman.entity]
+@export var workerListEntities:Array[]
 @export var chairs_made = 0
 
 var totalWoodSupply = 0

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Assets/woodworker/Woodsman.gd" id="1_e6rm2"]
 [ext_resource type="Texture2D" uid="uid://cd806tt5bj1c6" path="res://Assets/woodworker/woodenAxe-Icon.jpg" id="2_020vl"]
-[ext_resource type="Texture2D" uid="uid://b4qos8yuy7jwe" path="res://Assets/progressBar/colors/progressBar.png" id="3_myr7x"]
+[ext_resource type="Texture2D" uid="uid://b4qos8yuy7jwe" path="res://Assets/colors/progressBar.png" id="3_myr7x"]
 [ext_resource type="Script" path="res://Assets/woodworker/visualStorageManager.gd" id="4_4kn4r"]
 
 [node name="woodsman" type="Control"]
@@ -21,7 +21,7 @@ clip_contents = true
 layout_mode = 2
 
 [node name="prodImage" type="TextureRect" parent="VBoxContainer2/HBoxContainer"]
-custom_minimum_size = Vector2(64, 128)
+custom_minimum_size = Vector2(64, 256)
 layout_direction = 2
 layout_mode = 2
 size_flags_horizontal = 3
@@ -30,9 +30,18 @@ texture = ExtResource("2_020vl")
 expand_mode = 2
 
 [node name="statblock" type="RichTextLabel" parent="VBoxContainer2/HBoxContainer"]
+top_level = true
+z_as_relative = false
+clip_contents = false
+custom_minimum_size = Vector2(120, 0)
+layout_direction = 2
 layout_mode = 2
-text = "Storage Avaialble Buy $ Sell $"
-fit_content = true
+size_flags_horizontal = 3
+text = "Name | Player Storage | Avaialble | Buy $ | Sell $
+Axe | 0 | 150 | 12 | 6"
+scroll_active = false
+autowrap_mode = 0
+deselect_on_focus_loss_enabled = false
 
 [node name="action-purchase" type="Button" parent="VBoxContainer2/HBoxContainer"]
 layout_mode = 2

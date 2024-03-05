@@ -17,9 +17,7 @@ class_name Market
 
 var totalWoodSupply = 0
 
-
-		
-var time = 0tities:Array[Woodsman.entity]
+var time = 0
 var interval = 2.5
 
 #var w = Woodsman.new()

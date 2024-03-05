@@ -1,0 +1,6 @@
+[
+{"level": 0, "name": "Citizen", "requirements": {"happyLevel": 20, "fortressLevel": 1}},
+{"level": 1, "name": "Hero", "requirements": {"happyLevel": 100, "fortressLevel": 2}},
+{"level": 2, "name": "Price", "requirements": {"happyLevel": 200, "fortressLevel": 5}},
+{"level": 3, "name": "King", "requirements": {"happyLevel": 400, "fortressLevel": 10}}
+]

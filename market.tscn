@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://xj87i1wn4gyx"]
 
 [ext_resource type="Script" path="res://market.gd" id="1_5gcm1"]
-[ext_resource type="PackedScene" uid="uid://ba454pekvkah6" path="res://woodworker/Woodsman.tscn" id="2_sskod"]
+[ext_resource type="PackedScene" uid="uid://ba454pekvkah6" path="res://Assets/woodworker/Woodsman.tscn" id="2_sskod"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
